@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0;
+    background-image: url(Images/MailBackground.png);
+    background-repeat: no-repeat;
+    background-size: 1736px 991px;
+}
+table{
+    position: relative;
+    margin: auto;
+}
