@@ -157,8 +157,7 @@
   z-index: -1;
 }
 
-.input,
-button {
+.input{
   background: rgba(253, 253, 253, 0);
   outline: none;
   border: 1px solid rgba(255, 0, 0, 0);
@@ -170,6 +169,11 @@ button {
   color: #425981;
   font-weight: 500;
   font-size: 1.1em;
+}
+
+.input {
+  box-shadow: inset 4px 4px 4px rgba(165, 163, 163, 0.315),
+  4px 4px 4px rgba(218, 218, 218, 0.13);
 }
 
 .input-block {
@@ -184,31 +188,8 @@ button {
   color: gray;
 }
 
-.forgot {
-  /*display: block;*/
-  /*margin: 5px 0 10px 35px;*/
-  color: #5e7eb6;
-  /*font-size: 0.9em;*/
-}
-
 .input:focus + label,
 .input:valid + label {
   transform: translateY(-120%) scale(0.9);
   transition: all 0.4s;
-}
-
-button {
-  background-color: #5e7eb6;
-  color: white;
-  font-size: medium;
-  box-shadow: 2px 4px 8px rgba(70, 70, 70, 0.178);
-}
-
-a {
-  color: #5e7eb6;
-}
-
-.input {
-  box-shadow: inset 4px 4px 4px rgba(165, 163, 163, 0.315),
-  4px 4px 4px rgba(218, 218, 218, 0.13);
 }
