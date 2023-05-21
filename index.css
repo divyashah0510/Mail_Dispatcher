@@ -162,8 +162,7 @@
   z-index: -1;
 }
 
-.input,
-button {
+.input {
   background: rgba(253, 253, 253, 0);
   outline: none;
   border: 1px solid rgba(255, 0, 0, 0);
@@ -210,12 +209,7 @@ button {
   transition: all 0.4s;
 }
 
-button {
-  background-color: #5e7eb6;
-  color: white;
-  font-size: medium;
-  box-shadow: 2px 4px 8px rgba(70, 70, 70, 0.178);
-}
+
 
 a {
   color: #5e7eb6;
@@ -225,73 +219,60 @@ a {
   box-shadow: inset 4px 4px 4px rgba(165, 163, 163, 0.315),
     4px 4px 4px rgba(218, 218, 218, 0.13);
 }
- */
 
-
-/* Button Field */
-.Send{
-  padding: 15px 0 0;
-  margin: 0 0 0 30px;
-  border: none;
-  background: none;
-}
-
-.Send {
-  --primary-color: #111;
-  --hovered-color: #c84747;
-  position: relative;
+/* Send Button  */
+button {
+  margin: 0 0 0 120px;
+  max-width: 120px;
+  max-height: 40px;
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
   display: flex;
-  font-weight: 600;
-  font-size: 20px;
-  gap: 0.5rem;
   align-items: center;
-}
-
-.Send p {
-  margin: 0;
-  position: relative;
-  font-size: 20px;
-  color: var(--primary-color)
-}
-
-.Send::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  left: 0;
-  bottom: -7px;
-  background: var(--hovered-color);
-  height: 2px;
-  transition: 0.3s ease-out;
-}
-
-.Send p::before {
-  position: absolute;
-  content: "Send";
-  width: 0;
-  inset: 0;
-  color: var(--hovered-color);
+  border: none;
+  border-radius: 20px;
   overflow: hidden;
-  transition: 0.3s ease-out;
+  transition: all 0.2s;
 }
 
-.Send:hover::after {
-  width: 30%;
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
 }
 
-.Send:hover p::before {
-  width: 100%;
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
 }
 
-.Send:hover svg {
-  transform: translateX(4px);
-  color: var(--hovered-color)
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 
-.Send svg {
-  color: var(--primary-color);
-  transition: 0.2s;
-  position: relative;
-  width: 15px;
-  transition-delay: 0.2s;
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(5em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
 }

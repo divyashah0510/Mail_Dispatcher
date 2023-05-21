@@ -20,7 +20,6 @@
         <input type="file" accept=".csv" required="" id="upload-file-input">
     </label>
 </form>
-
 <!--Input Fields-->
 <div class="container">
         <div class="left">
@@ -30,21 +29,24 @@
                     <label class="label" for="email">Username</label>
                 </div>
                 <div class="input-block">
-                    <input class="input" type="password" id="pass" required="">
+                    <input class="input" type="text" id="pass" required="">
                     <label class="label" for="pass">Subject</label>
                 </div>
                 <div class="input-block">
                     <textarea class="input" name="" id="" cols="40" rows="10" required=""></textarea>
                     <label for="content" class="label-for-content">Content</label>
                 </div>
-                <!-- <div>
-                    <button class="Send">
-                        <p>Send</p>
-                        <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
-                        </svg>
-                        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
-                    </button>
-                </div> -->
+                <button>
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <span>Send</span>
+                </button>
             </form>
         </div>
         <div class="right">
@@ -93,5 +95,6 @@
 
         </div>
     </div>
+
 </body>
 </html>
