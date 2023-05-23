@@ -369,3 +369,15 @@ button:active {
     transform: translate(-100%, -100%) translate3d(0, 0, 0);
   }
 }
+h1 {
+  position: absolute;
+  margin: 10px 0 0 150px;
+  font-family:Georgia,serif;
+  font-size: 90px;
+  color: #084cdf;
+}
+#next {
+  margin: 110px 0 0 150px;
+  font-family:Georgia,serif;
+  font-size: 90px;
+}
